@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "WWCountdownButton",
+        "repositoryURL": "/Users/william/Desktop/WWCountdownButton",
+        "state": {
+          "branch": "main",
+          "revision": "92a27ff7e5b6cd585bda590c0ee9f379fd7e8041",
+          "version": null
+        }
+      },
+      {
         "package": "WWPrint",
         "repositoryURL": "https://github.com/William-Weng/WWPrint",
         "state": {

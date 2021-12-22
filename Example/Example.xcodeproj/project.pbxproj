@@ -13,6 +13,8 @@
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
+		3DE096B32772B47C001AB8A6 /* WWCountdownButton in Frameworks */ = {isa = PBXBuildFile; productRef = 3DE096B22772B47C001AB8A6 /* WWCountdownButton */; };
+		3DE096B62772B6CC001AB8A6 /* FiraCode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		3DBCD87C26F198F300522E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBCD87F26F198F300522E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBCD88126F198F300522E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE096B32772B47C001AB8A6 /* WWCountdownButton in Frameworks */,
 				3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +89,7 @@
 		3DBCD88926F1994500522E3B /* Material */ = {
 			isa = PBXGroup;
 			children = (
+				3DE096B42772B6C0001AB8A6 /* Font */,
 				3DBCD87C26F198F300522E3B /* Assets.xcassets */,
 			);
 			path = Material;
@@ -96,6 +101,14 @@
 				3DBCD88126F198F300522E3B /* Info.plist */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		3DE096B42772B6C0001AB8A6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +129,7 @@
 			name = Example;
 			packageProductDependencies = (
 				3DAC9C1827016E78006663C2 /* WWPrint */,
+				3DE096B22772B47C001AB8A6 /* WWCountdownButton */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -146,6 +160,7 @@
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
 				3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */,
+				3DE096B12772B47C001AB8A6 /* XCRemoteSwiftPackageReference "WWCountdownButton" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -162,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */,
+				3DE096B62772B6CC001AB8A6 /* FiraCode.ttf in Resources */,
 				3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */,
 				3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */,
 			);
@@ -389,6 +405,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		3DE096B12772B47C001AB8A6 /* XCRemoteSwiftPackageReference "WWCountdownButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/william/Desktop/WWCountdownButton";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -396,6 +420,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */;
 			productName = WWPrint;
+		};
+		3DE096B22772B47C001AB8A6 /* WWCountdownButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DE096B12772B47C001AB8A6 /* XCRemoteSwiftPackageReference "WWCountdownButton" */;
+			productName = WWCountdownButton;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
