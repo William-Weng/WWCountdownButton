@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "WWCountdownButton",
-        "repositoryURL": "/Users/william/Desktop/WWCountdownButton",
+        "repositoryURL": "https://github.com/William-Weng/WWCountdownButton.git",
         "state": {
           "branch": "main",
-          "revision": "92a27ff7e5b6cd585bda590c0ee9f379fd7e8041",
+          "revision": "ccf9735f4644bd327b08f7145955080c54f9afa8",
           "version": null
         }
       },
