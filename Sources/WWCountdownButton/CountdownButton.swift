@@ -52,10 +52,13 @@ public extension WWCountdownButton {
     
     /// 回歸初始值 (歸零)
     func reset() {
-        
-        let times = (!isCountdown) ? dateComponents(with: 0) : dateComponents(with: self.countdownSecond)
-        
-        titleSetting(with: times)
+        resetTitleSetting(isCountdown: isCountdown)
+        timerClean()
+    }
+    
+    /// 直接設定為結束的狀態
+    func finish() {
+        finishTitleSetting(isCountdown: isCountdown)
         timerClean()
     }
 }
@@ -71,9 +74,9 @@ private extension WWCountdownButton {
         
         guard let components = countdownNumbers(from: startDate, isCountdown: isCountdown) else { return }
         
-        if (components.isFinish) { timerClean() }
-        
         titleSetting(with: components.times)
+        
+        if (components.isFinish) { timerClean(); finishTitleSetting(isCountdown: isCountdown) }
         resultClourse?(components)
     }
     
@@ -121,7 +124,7 @@ private extension WWCountdownButton {
     ///   - isPaused: 是否要暫停？
     ///   - isCountdown: 是否是倒數？
     func pauseControl(isPaused: Bool, isCountdown: Bool) {
-                
+        
         let elapsedSecond = -(self.elapsedSecond + 1)
         
         timer?.isPaused = isPaused
@@ -132,5 +135,18 @@ private extension WWCountdownButton {
     func timerClean() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    /// reset時的Title的設定
+    /// - Parameter isCountdown: Bool
+    func resetTitleSetting(isCountdown: Bool) {
+        let times = (!isCountdown) ? dateComponents(with: 0) : dateComponents(with: self.countdownSecond)
+        titleSetting(with: times)
+    }
+    
+    /// 倒數完成後的Title的設定
+    /// - Parameter isCountdown: Bool
+    func finishTitleSetting(isCountdown: Bool) {
+        resetTitleSetting(isCountdown: !isCountdown)
     }
 }
