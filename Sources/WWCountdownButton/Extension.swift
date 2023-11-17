@@ -7,6 +7,13 @@
 
 import UIKit
 
+// MARK: - Collection (override function)
+extension Collection {
+
+    /// [為Array加上安全取值特性 => nil](https://stackoverflow.com/questions/25329186/safe-bounds-checked-array-lookup-in-swift-through-optional-bindings)
+    subscript(safe index: Index) -> Element? { return indices.contains(index) ? self[index] : nil }
+}
+
 // MARK: - Date (Operator Overloading)
 extension Date {
     
@@ -45,6 +52,22 @@ extension Date {
         }
         
         return result
+    }
+}
+
+// MARK: - Calendar (static function)
+extension Calendar {
+    
+    /// 產生日曆
+    /// - Parameter localeIdentifier: [語言代號 (zh-Hant-TW)](http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry)
+    /// - Returns: Calendar
+    static func _build(localeIdentifier: String = "en-US", timeZone identifier: String = "UTC") -> Self {
+        
+        var calendar = Calendar.current
+        calendar.locale = Locale(identifier: localeIdentifier)
+        calendar.timeZone = TimeZone(identifier: identifier) ?? .current
+        
+        return calendar
     }
 }
 

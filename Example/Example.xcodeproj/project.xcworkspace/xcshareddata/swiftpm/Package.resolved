@@ -1,25 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "WWCountdownButton",
-        "repositoryURL": "https://github.com/William-Weng/WWCountdownButton.git",
-        "state": {
-          "branch": "main",
-          "revision": "ccf9735f4644bd327b08f7145955080c54f9afa8",
-          "version": null
-        }
-      },
-      {
-        "package": "WWPrint",
-        "repositoryURL": "https://github.com/William-Weng/WWPrint",
-        "state": {
-          "branch": null,
-          "revision": "e4ad2863717465f224aa676f10a3a7ff1df58f7c",
-          "version": "1.0.0"
-        }
+  "pins" : [
+    {
+      "identity" : "wwprint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWPrint",
+      "state" : {
+        "revision" : "edb791ed5e59c0f4044810d21a89102a440e2fbd",
+        "version" : "1.2.1"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }

@@ -15,10 +15,8 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() { super.viewDidLoad() }
     
-    @IBAction func countdown1(_ sender: WWCountdownButton) { sender.countdown(second: 120) }
-    
+    @IBAction func countdown1(_ sender: WWCountdownButton) { sender.countdown(second: 3600, displayType: .hhmmss) }
     @IBAction func countdown2(_ sender: WWCountdownButton) { sender.countdown(second: 60, isCountdown: false) }
-    
     @IBAction func countdown3(_ sender: WWCountdownButton) {
         
         sender.countdown(second: 5) { info in
