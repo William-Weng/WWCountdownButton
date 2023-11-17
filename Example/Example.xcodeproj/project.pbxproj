@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		3DE096B62772B6CC001AB8A6 /* FiraCode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */; };
 		64C797682B08186600C1AC19 /* WWCountdownButton in Frameworks */ = {isa = PBXBuildFile; productRef = 64C797672B08186600C1AC19 /* WWCountdownButton */; };
 		64C7976B2B0818A800C1AC19 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 64C7976A2B0818A800C1AC19 /* WWPrint */; };
+		64C7976E2B0832C300C1AC19 /* WWCountdownButton in Frameworks */ = {isa = PBXBuildFile; productRef = 64C7976D2B0832C300C1AC19 /* WWCountdownButton */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C7976E2B0832C300C1AC19 /* WWCountdownButton in Frameworks */,
 				64C7976B2B0818A800C1AC19 /* WWPrint in Frameworks */,
 				64C797682B08186600C1AC19 /* WWCountdownButton in Frameworks */,
 			);
@@ -130,6 +132,7 @@
 			packageProductDependencies = (
 				64C797672B08186600C1AC19 /* WWCountdownButton */,
 				64C7976A2B0818A800C1AC19 /* WWPrint */,
+				64C7976D2B0832C300C1AC19 /* WWCountdownButton */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -159,8 +162,8 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				64C797662B08186600C1AC19 /* XCLocalSwiftPackageReference "../@WWCountdownButton" */,
 				64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */,
+				64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -268,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -396,13 +399,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		64C797662B08186600C1AC19 /* XCLocalSwiftPackageReference "../@WWCountdownButton" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../@WWCountdownButton";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -410,6 +406,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.1;
+			};
+		};
+		64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWCountdownButton";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -423,6 +427,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */;
 			productName = WWPrint;
+		};
+		64C7976D2B0832C300C1AC19 /* WWCountdownButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */;
+			productName = WWCountdownButton;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

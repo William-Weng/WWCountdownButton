@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "wwcountdownbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWCountdownButton",
+      "state" : {
+        "revision" : "47f4dabb1b87a711fda1401f4f04c5ba8bba4490",
+        "version" : "1.2.0"
+      }
+    },
+    {
       "identity" : "wwprint",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWPrint",
