@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,10 @@
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
-		3DE096B62772B6CC001AB8A6 /* FiraCode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */; };
-		64C797682B08186600C1AC19 /* WWCountdownButton in Frameworks */ = {isa = PBXBuildFile; productRef = 64C797672B08186600C1AC19 /* WWCountdownButton */; };
-		64C7976B2B0818A800C1AC19 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 64C7976A2B0818A800C1AC19 /* WWPrint */; };
+		64C797682B08186600C1AC19 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		64C7976B2B0818A800C1AC19 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		64C7976E2B0832C300C1AC19 /* WWCountdownButton in Frameworks */ = {isa = PBXBuildFile; productRef = 64C7976D2B0832C300C1AC19 /* WWCountdownButton */; };
+		818C42A72B8DAE0B004857FD /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 818C42A62B8DAE0B004857FD /* WWPrint */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,6 @@
 		3DBCD87C26F198F300522E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBCD87F26F198F300522E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBCD88126F198F300522E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +34,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C7976E2B0832C300C1AC19 /* WWCountdownButton in Frameworks */,
-				64C7976B2B0818A800C1AC19 /* WWPrint in Frameworks */,
-				64C797682B08186600C1AC19 /* WWCountdownButton in Frameworks */,
+				64C7976B2B0818A800C1AC19 /* (null) in Frameworks */,
+				818C42A72B8DAE0B004857FD /* WWPrint in Frameworks */,
+				64C797682B08186600C1AC19 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,6 @@
 		3DBCD88926F1994500522E3B /* Material */ = {
 			isa = PBXGroup;
 			children = (
-				3DE096B42772B6C0001AB8A6 /* Font */,
 				3DBCD87C26F198F300522E3B /* Assets.xcassets */,
 			);
 			path = Material;
@@ -103,14 +102,6 @@
 				3DBCD88126F198F300522E3B /* Info.plist */,
 			);
 			name = Setting;
-			sourceTree = "<group>";
-		};
-		3DE096B42772B6C0001AB8A6 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				3DE096B52772B6CC001AB8A6 /* FiraCode.ttf */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +121,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				64C797672B08186600C1AC19 /* WWCountdownButton */,
-				64C7976A2B0818A800C1AC19 /* WWPrint */,
 				64C7976D2B0832C300C1AC19 /* WWCountdownButton */,
+				818C42A62B8DAE0B004857FD /* WWPrint */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -144,8 +134,9 @@
 		3DBCD86826F198EF00522E3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					3DBCD86F26F198EF00522E3B = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -153,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = 3DBCD86B26F198EF00522E3B /* Build configuration list for PBXProject "Example" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -162,8 +153,8 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */,
 				64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */,
+				818C42A52B8DAE0B004857FD /* XCRemoteSwiftPackageReference "WWPrint" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -180,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */,
-				3DE096B62772B6CC001AB8A6 /* FiraCode.ttf in Resources */,
 				3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */,
 				3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */,
 			);
@@ -351,6 +341,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -371,6 +365,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -400,14 +398,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWPrint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.1;
-			};
-		};
 		64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWCountdownButton";
@@ -416,22 +406,26 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		818C42A52B8DAE0B004857FD /* XCRemoteSwiftPackageReference "WWPrint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWPrint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		64C797672B08186600C1AC19 /* WWCountdownButton */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = WWCountdownButton;
-		};
-		64C7976A2B0818A800C1AC19 /* WWPrint */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 64C797692B0818A800C1AC19 /* XCRemoteSwiftPackageReference "WWPrint" */;
-			productName = WWPrint;
-		};
 		64C7976D2B0832C300C1AC19 /* WWCountdownButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 64C7976C2B0832C300C1AC19 /* XCRemoteSwiftPackageReference "WWCountdownButton" */;
 			productName = WWCountdownButton;
+		};
+		818C42A62B8DAE0B004857FD /* WWPrint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 818C42A52B8DAE0B004857FD /* XCRemoteSwiftPackageReference "WWPrint" */;
+			productName = WWPrint;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

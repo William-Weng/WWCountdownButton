@@ -3,10 +3,10 @@
     {
       "identity" : "wwcountdownbutton",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/William-Weng/WWCountdownButton",
+      "location" : "https://github.com/William-Weng/WWCountdownButton.git",
       "state" : {
-        "revision" : "47f4dabb1b87a711fda1401f4f04c5ba8bba4490",
-        "version" : "1.2.0"
+        "revision" : "f822cd546972fc6d635ef1e8a2c0912255b91978",
+        "version" : "1.2.1"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWPrint",
       "state" : {
-        "revision" : "edb791ed5e59c0f4044810d21a89102a440e2fbd",
-        "version" : "1.2.1"
+        "revision" : "0acf1057863faea81c3ded2057c21b09c3435435",
+        "version" : "1.3.0"
       }
     }
   ],
