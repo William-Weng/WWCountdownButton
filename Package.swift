@@ -11,9 +11,10 @@ let package = Package(
     products: [
         .library(name: "WWCountdownButton", targets: ["WWCountdownButton"]),
     ],
-    dependencies: [],
+    dependencies: [
+    ],
     targets: [
-        .target(name: "WWCountdownButton", dependencies: []),
+        .target(name: "WWCountdownButton", resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5
